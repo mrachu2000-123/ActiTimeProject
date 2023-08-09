@@ -50,14 +50,14 @@ public class TestUtil extends Baseclass{
 		
 		String screenshotFolderPath = ".//screenshots/";
 		
-		try {
-			Path path = Paths.get(screenshotFolderPath);
-			Files.walk(path)
-			.map(Path::toFile)
-			.forEach(File::delete);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try {
+//			Path path = Paths.get(screenshotFolderPath);
+//			Files.walk(path)
+//			.map(Path::toFile)
+//			.forEach(File::delete);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 	
 	

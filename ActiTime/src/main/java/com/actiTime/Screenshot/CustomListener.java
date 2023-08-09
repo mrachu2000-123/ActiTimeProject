@@ -13,19 +13,19 @@ public class CustomListener implements ITestListener {
     public void onStart(ITestContext context) {
         // Delete the failed screenshot folder at the start of each test suite
         String screenshotFolderPath = ".//screenshots/"; // Provide the actual path
-        deleteFolder(screenshotFolderPath);
+//        deleteFolder(screenshotFolderPath);
     }
 
-    private void deleteFolder(String folderPath) {
-        try {
-            Path path = Paths.get(folderPath);
-            Files.walk(path)
-                    .map(Path::toFile)
-                    .forEach(File::delete);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    private void deleteFolder(String folderPath) {
+//        try {
+//            Path path = Paths.get(folderPath);
+//            Files.walk(path)
+//                    .map(Path::toFile)
+//                    .forEach(File::delete);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     // Implement other listener methods as needed
 }
